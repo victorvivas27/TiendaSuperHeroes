@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- Aca el descunento  -->
+    <p class="descuento">20% de descuento en todos los productos!
+        <p />
+        <!-- Aca el header -->
+    <header class="nombre-tienda">
+        <img src="./img/Group.png" alt="">
+        <h2 class="titulo-tienda">Nombre Tienda</h2>
+    </header>
+
+    <!--Aca en Navbar-->
+    <nav class="navbar">
+        <ul class="lista-navbar">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+        </ul>
+    </nav>
+    <!--Aca en Form-->
+    <div class="contenedor-form">
+        <form class="form" action="">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+
+            <div class="nombre-especie">
+                <div class="contenedor">
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="contenedor">
+                    <label for="especie">*Especie</label>
+                    <select id="especie" name="especie" class="select" required>
+                        <option value="">Seleccione una especie</option>
+                        <option value="mutante">Mutante</option>
+                        <option value="humano">Humano</option>
+                        <option value="alien">Alien</option>
+                        <!-- Añade más opciones según sea necesario -->
+                    </select>
+                </div>
+           
+                <div class="contenedor">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="contenedor">
+                    <label  for="file">Agregar Foto</label>
+                    <input  type="file" id="file" name="file" required>
+                </div>
+            </div>
+            <section class="contenedor-poderes">
+                <textarea class="textarea"> Descripcion</textarea>
+                <section class="contenedor-check-section">
+                    <div class="poderes">
+                        <h3>Poderes</h3>
+                        <div class="contenedor-check">
+                            <input type="checkbox" name="poderes" value="volar">
+                            <label class="checkbox-container">Volar</label><br>
+                        </div>
+                        <div class="contenedor-check">
+                            <input type="checkbox" name="poderes" value="superinteligencia">
+                            <label class="checkbox-container">Superinteligencia </label><br>
+                        </div>
+
+                        <div class="contenedor-check">
+                            <input type="checkbox" name="poderes" value="vista de rayo láser">
+                            <label class="checkbox-container">Vista de rayo láser</label><br>
+                        </div>
+
+                        <div class="contenedor-check">
+                            <input type="checkbox" name="poderes" value="billetera gorda">
+                            <label class="checkbox-container">Billetera gorda </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="tipo-personaje">
+                        <h3>Tipo de Personaje</h3>
+                        <div class="contenedor-check">
+                            <input type="radio" name="tipo-personaje" value="heroe/heroeina" required>
+                            <label class="checkbox-container">Hero/Heroína </label>
+                        </div>
+                        <div class="contenedor-check">
+                            <input type="radio" name="tipo-personaje" value="villano/villana" required>
+                            <label class="checkbox-container">Villano/Villana </label>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="contenedor-button">
+                <button class="button" type="submit">Añadir</button>
+            </div>
+
+
+        </form>
+       <!--Aca el Boton de  + -->
+    <div class="contenedor-boton-volver">
+        <a href="./Home.html">
+        <button class="boton-volver">Volver</button>
+    </a>
+    </div>
+    </div>
+
+    <!--Aca el footer -->
+    <footer class="footer">Todos los derechos reservados a FRONT END 1</footer>
+
+     <script>
+        const inputFile = document.getElementById('file');
+        const fileNameDisplay = document.getElementById('file-name');
+
+        inputFile.addEventListener('change', function () {
+            if (inputFile.files.length > 0) {
+                fileNameDisplay.textContent = inputFile.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'No se ha seleccionado ningún archivo';
+            }
+        });
+    </script> 
+</body>
+
+</html>

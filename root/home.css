@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Aca estilo del decuento */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+  
+}
+.descuento {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.58px;
+    padding: 10px;
+    background: #1CD1B0;
+}
+
+/*Aca estilo de nombre de la tienda*/
+.nombre-tienda {
+    background: #00669F;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+}
+
+.titulo-tienda {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.16px;
+}
+
+/*Aca estilo del navbar*/
+.lista-navbar {
+    background: #001D2D;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+.lista-navbar li {
+    text-decoration: none;
+}
+
+.lista-navbar li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+/*Aca estilo de la card*/
+.card-super-hero {
+    width: 300px;
+    background: #F3F3F3;
+    margin: 20px;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 
+     0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-super-hero figure {
+    position: relative;
+}
+
+.corazon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.perfil-imagen {
+    position: absolute;
+    top: 140px;
+    left: 80px;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.footer-card h2 {
+    padding-bottom:  20px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.16px;
+}
+
+.footer-card p {
+    width: 280px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #333333;
+}
+
+.button-card {
+    background: #00669F;
+    margin: 30px;
+    padding: 10px 35px;
+    color: aliceblue;
+    border: 2px solid #004B77; /* Añadir borde para que parezca una tecla */
+    border-radius: 6px; /* Bordes redondeados para un efecto más realista */
+    box-shadow: 0 4px #004B77; /* Sombra para un efecto de elevación */
+    font-family: 'Arial', sans-serif; /* Tipografía que se asemeje a una tecla */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    text-transform: uppercase; /* Transformar texto a mayúsculas */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out; /* Transición suave para el efecto de clic */
+}
+
+.button-card:hover {
+    background: #004B77;
+}
+
+.button-card:active {
+    box-shadow: 0 2px #003354; /* Reducir la sombra al hacer clic para un efecto de pulsación */
+    transform: translateY(2px); /* Mover el botón hacia abajo al hacer clic */
+}
+/*Aca estilo de Botom + */
+.contenedor-boton-mas{
+    height: 100px;
+}
+.boton-mas {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 200;
+    border: none;
+    background: #00669F; /* Color de fondo del botón */
+    padding: 15px 25px; /* Ajusta el relleno para un tamaño adecuado */
+    border-radius: 50px; /* Bordes redondeados para un estilo de botón circular */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño del texto del botón */
+    color: #fff; /* Color del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transición para efectos de hover */
+}
+
+.boton-mas:hover {
+    background: #004B77; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.boton-mas:active {
+    background: #003C6C; /* Color de fondo al hacer clic */
+    transform: scale(0.98); /* Efecto de reducción al hacer clic */
+}
+/*Aca estilo del footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0394e7;
+    height: 50px;
+    color: #fff;
+}
