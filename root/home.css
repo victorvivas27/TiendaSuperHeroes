@@ -67,11 +67,19 @@ section{
     width: 300px;
     background: #F3F3F3;
     margin: 20px;
-    border-radius: 13px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 
      0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header-image{
+    width: 100%;
+    height: 200px;
+  
+    background-size: cover;
+    background-position: center;
+    border-radius: 13px 13px 0 0;
 }
 
 .card-super-hero figure {
@@ -85,9 +93,10 @@ section{
 }
 
 .perfil-imagen {
+    width: 100px;
     position: absolute;
     top: 140px;
-    left: 80px;
+    left: 90px;
 }
 
 .footer-card {
